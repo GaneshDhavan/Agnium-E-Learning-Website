@@ -1,1 +1,0 @@
-# INP_mini_project
