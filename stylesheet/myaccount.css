@@ -1,0 +1,36 @@
+.main_content{
+    min-height: 31.25em;
+    padding: 20px 0px;
+    background-color: rgba(175, 249, 138, 1);
+}
+
+.main_content .profile{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+    padding: 0px 20%;
+    margin: 50px 10px;
+}
+
+.profile img{
+    grid-column: 1/3;
+    height: 150px;
+    border-radius: 25%;
+    padding: 10px;
+}
+
+.profile h4{
+    grid-column: 1/3;
+    font-size: large;
+    padding: 5px;
+}
+
+table{
+    grid-column: 1/3;
+    font-size: large;
+}
+
+td{
+    padding: 10px;
+}

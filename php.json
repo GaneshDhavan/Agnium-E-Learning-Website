@@ -1,0 +1,86 @@
+{
+    "1":{
+        "title":"PHP Introduction",
+        "info":"PHP is an acronym for \"PHP: Hypertext Preprocessor\". PHP is a widely-used, open source scripting language. PHP scripts are executed on the server. PHP is free to download and use. <br><br><h3>Why PHP?</h3><br><br><li>PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)<br><li>PHP is compatible with almost all servers used today (Apache, IIS, etc.)<br><li>PHP supports a wide range of databases<br><li>PHP is free. Download it from the official PHP resource: www.php.net<br><li>PHP is easy to learn and runs efficiently on the server side",
+        "example":null,
+        "codeExample":null,
+        "codeExpln":null
+    },
+    "2":{
+        "title":"PHP Syntax",
+        "info":"A PHP script is executed on the server, and the plain HTML result is sent back to the browser.<br><br>A PHP script can be placed anywhere in the document. A PHP script starts with \"<?php\" and ends with \"?>\". The default file extension for PHP files is \".php\". A PHP file normally contains HTML tags, and some PHP scripting code. In PHP, keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are not case-sensitive.",
+        "example":"<!DOCTYPE html><html><body>My car is red<br>My house is red<br>My boat is red</body></html>",
+        "codeExample":"&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;?php<br>$color = \"red\";<br>echo \"My car is \" . $color . \"&lt;br&gt;\";<br>echo \"My house is \" . $COLOR . \"&lt;br&gt;\";<br>echo \"My boat is \" . $coLOR . \"&lt;br&gt;\";<br>?&gt; <br><br>&lt;/body&gt;<br>&lt;/html&gt;",
+        "codeExpln":null
+    },
+    "3":{
+        "title":"PHP Comments",
+        "info":"A comment in PHP code is a line that is not executed as a part of the program. Its only purpose is to be read by someone who is looking at the code.<br><br>Comments can be used to:<br><br><li>Let others understand your code.<br><li>Remind yourself of what you did - Most programmers have experienced coming back to their own work a year or two later and having to re-figure out what they did. Comments can remind you of what you were thinking when you wrote the code.",
+        "example":null,
+        "codeExample":"&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;?php<br>// This is a single-line comment<br><br># This is also a single-line comment<br><br>/*<br>This is a multiple-lines comment block<br>that spans over multiple<br>lines<br>*/<br>?&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;",
+        "codeExpln":null
+    },
+    "4":{
+        "title":"PHP Variables",
+        "info":"Variables are \"containers\" for storing information.<br><br>Creating (Declaring) PHP Variables: In PHP, a variable starts with the $ sign, followed by the name of the variable.<br>",
+        "example":"I love Agnium!",
+        "codeExample":"&lt;?php<br>$num = 3;<br>$float = 5.5;<br>$txt = \"Agnium\";<br>echo \"I love \" . $txt . \"!\";<br>?&gt;",
+        "codeExpln":"Note: When you assign a text value to a variable, put quotes around the value.<br><br>Note: Unlike other programming languages, PHP has no command for declaring a variable. It is created the moment you first assign a value to it."
+    },
+    "5":{
+        "title":"PHP Echo/Print",
+        "info":"With PHP, there are two basic ways to get output: echo and print. echo and print are more or less the same. They are both used to output data to the screen.<br><br>The differences are small: echo has no return value while print has a return value of 1 so it can be used in expressions. echo can take multiple parameters (although such usage is rare) while print can take one argument. echo is marginally faster than print.",
+        "example":"<h2>Learn PHP</h2><br>Study PHP at Agnium<br>",
+        "codeExample":"&lt;?php<br>$txt1 = \"Learn PHP\";<br>$txt2 = \"Agnium\";<br>$x = 5;<br>$y = 4;<br><br>echo \"&lt;h2&gt;\" . $txt1 . \"&lt;/h2&gt;&lt;br&gt;\";<br>echo \"Study PHP at \" . $txt2 . \"&lt;br&gt;\";<br>print $x + $y;<br>?&gt;",
+        "codeExpln":"The echo statement can be used with or without parentheses: echo or echo(). Also, the print statement can be used with or without parentheses: print or print()."
+    },
+    "6":{
+        "title":"PHP Data Types",
+        "info":"Variables can store data of different types, and different data types can do different things.<br><br>PHP supports the following data types:<br><br><li>String<br><li>Integer<br><li>Float (floating point numbers - also called double)<br><li>Boolean<br><li>Array<br><li>Object<br><li>NULL<br><li>Resource",
+        "example":"string<br>integer<br>float<br>boolean<br>array<br>object",
+        "codeExample":"&lt;?php<br>$txt = \"I love Agnium\";<br>var_dump($txt);<br><br>$x = 5985;<br>var_dump($x);<br><br>$y = 10.365;<br>var_dump($y);<br><br>$z = true;<br>var_dump($z);<br><br>$cars = array(\"Volvo\",\"BMW\",\"Toyota\");<br>var_dump($cars);<br><br>class Car {<br>public $color;<br>public $model;<br>}<br>$myCar = new Car(\"black\",\"Mercedes\")<br>var_dump($myCar);<br>?&gt;",
+        "codeExpln":"The PHP var_dump() function returns the data type and value."
+    },
+    "7":{
+        "title":"PHP Functions",
+        "info":"The real power of PHP comes from its functions. PHP has more than 1000 built-in functions, and in addition you can create your own custom functions.<br><br><li>A function is a block of statements that can be used repeatedly in a program.<br><li>A function will not execute automatically when a page loads.<br><li>A function will be executed by a call to the function.<br><br>A user-defined function declaration starts with the word function. &lt;h3&gt;Syntax:&lt;/h3&gt;<br><br>function functionName() {<br><pre>            code to be executed;</pre>}<br>",
+        "example":"Hello everyone!",
+        "codeExample":"&lt;?php <br>function writeMsg() {<br>echo \"Hello everyone!\";<br>}<br><br>writeMsg(); // call the function<br>?&gt;",
+        "codeExpln":"A function name must start with a letter or an underscore. Function names are NOT case-sensitive."
+    },
+    "8":{
+        "title":"PHP Arrays",
+        "info":"An array is a special variable, which can hold more than one value at a time. If you have a list of items (a list of car names, for example), storing the cars in single variables at that time an array is useful.<br><br>In PHP, the array() function is used to create an array.<br><br>In PHP, there are three types of arrays:<br><br><li><b>Indexed arrays</b> - Arrays with a numeric index<br><li><b>Associative arrays</b> - Arrays with named keys<br><li><b>Multidimensional arrays</b> - Arrays containing one or more arrays",
+        "example":"I like Volvo, BMW and Toyota.",
+        "codeExample":"&lt;?php <br>$cars = array(\"Volvo\", \"BMW\", \"Toyota\");<br>echo \"I like \" . $cars[0] . \", \" . $cars[1] . \" and \" . $cars[2] . \".\";<br>?&gt;",
+        "codeExpln":null
+    },
+    "9":{
+        "title":"PHP Superglobals",
+        "info":"Some predefined variables in PHP are \"superglobals\", which means that they are always accessible, regardless of scope - and you can access them from any function, class or file without having to do anything special.<br><br>The PHP superglobal variables are:<br><br><li>$GLOBALS<br><li>$_SERVER<br><li>$_REQUEST<br><li>$_POST<br><li>$_GET<br><li>$_FILES<br><li>$_ENV<br><li>$_COOKIE<br><li>$_SESSION<br><br>$GLOBALS is a PHP super global variable which is used to access global variables from anywhere in the PHP script (also from within functions or methods).<br><br>$_SERVER is a PHP super global variable which holds information about headers, paths, and script locations.<br><br>PHP $_REQUEST is a PHP super global variable which is used to collect data after submitting an HTML form.<br><br>PHP $_POST is a PHP super global variable which is used to collect form data after submitting an HTML form with method=\"post\". $_POST is also widely used to pass variables.<br><br>PHP $_GET is a PHP super global variable which is used to collect form data after submitting an HTML form with method=\"get\".",
+        "example":"100<br>",
+        "codeExample":"&lt;?php <br>$x = 75;<br>$y = 25;<br><br>function addition() {<br>$GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];<br>}<br><br>addition();<br>echo $z;<br><br>echo $_SERVER['PHP_SELF'];<br>echo \"&lt;br&gt;\";<br>echo $_SERVER['SERVER_NAME'];<br>echo \"&lt;br&gt;\";<br><br>?&gt;",
+        "codeExpln":null
+    },
+    "10":{
+        "title":"PHP Cookies",
+        "info":"A cookie is often used to identify a user. A cookie is a small file that the server embeds on the user's computer. Each time the same computer requests a page with a browser, it will send the cookie too. With PHP, you can both create and retrieve cookie values.<br><br>A cookie is created with the setcookie() function.",
+        "example":"Cookie user is set!<br>Value is John Doe.",
+        "codeExample":"&lt;?php <br>$cookie_name = \"user\";<br>$cookie_value = \"John Doe\";<br>setcookie($cookie_name, $cookie_value, time() + (86400 * 30), \"\"); // 86400 = 1 day<br>?&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;?php<br>if(!isset($_COOKIE[$cookie_name])) {<br>echo \"Cookie named '\" . $cookie_name . \"' is not set!\";<br>} else {<br>echo \"Cookie '\" . $cookie_name . \"' is set!\";<br>echo \"Value is: \" . $_COOKIE[$cookie_name];<br>}<br>?&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;",
+        "codeExpln":"The setcookie() function must appear BEFORE the &lt;html&gt; tag."
+    },
+    "11":{
+        "title":"PHP Sessions",
+        "info":"A session is a way to store information (in variables) to be used across multiple pages. Unlike a cookie, the information is not stored on the users computer.<br><br>When you work with an application, you open it, do some changes, and then you close it. This is much like a Session. The computer knows who you are. It knows when you start the application and when you end. But on the internet there is one problem: the web server does not know who you are or what you do, because the HTTP address doesn't maintain state.<br>Session variables solve this problem by storing user information to be used across multiple pages (e.g. username, favorite color, etc). By default, session variables last until the user closes the browser.<br>So; Session variables hold information about one single user, and are available to all pages in one application.<br><br>A session is started with the session_start() function. Session variables are set with the PHP global variable: $_SESSION.",
+        "example":"Session variables are set",
+        "codeExample":"&lt;?php <br>// Start the session<br>session_start();<br>?&gt;<br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;?php<br>// Set session variables<br>$_SESSION[\"favcolor\"] = \"green\";<br>$_SESSION[\"favanimal\"] = \"cat\";<br>echo \"Session variables are set.\";<br>?&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;",
+        "codeExpln":"The session_start() function must be the very first thing in your document. Before any HTML tags."
+    },
+    "12":{
+        "title":"PHP MySQL Database",
+        "info":"With PHP, you can connect to and manipulate databases. MySQL is the most popular database system used with PHP.<br><br><li>MySQL is a database system used on the web<br><li>MySQL is a database system that runs on a server<br><li>MySQL is ideal for both small and large applications<br><li>MySQL is very fast, reliable, and easy to use<br><li>MySQL uses standard SQL<br><li>MySQL compiles on a number of platforms<br><li>MySQL is free to download and use<br><li>MySQL is developed, distributed, and supported by Oracle Corporation<br><li>MySQL is named after co-founder Monty Widenius's daughter: My",
+        "example":"Connected successfully<br>Database created successfully<br>Table MyGuests created successfully<br>New record created successfully<br>",
+        "codeExample":"&lt;?php<br>$servername = \"localhost\";<br>$username = \"username\";<br>$password = \"password\";<br><br>// Create connection<br>$conn = new mysqli($servername, $username, $password);<br><br>// Check connection<br>if ($conn-&gt;connect_error) {<br>die(\"Connection failed: \" . $conn-&gt;connect_error. \"&lt;br&gt;\");<br>}<br>echo \"Connected successfully<br>\";<br><br>$sql = \"CREATE DATABASE myDB\";<br>if ($conn-&gt;query($sql) === TRUE) {<br>echo \"Database created successfully<br>\";<br>} else {<br>echo \"Error creating database: \" . $conn-&gt;error . \"&lt;br&gt;\";<br>}<br><br>$conn = new mysqli($servername, $username, $password, $dbname);<br>// Check connection<br>if ($conn-&gt;connect_error) {<br>die(\"Connection failed: \" . $conn-&gt;connect_error . \"&lt;br&gt;\");<br>}<br><br>// sql to create table<br>$sql = \"CREATE TABLE MyGuests (<br>id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,<br>firstname VARCHAR(30) NOT NULL,<br>lastname VARCHAR(30) NOT NULL,<br>email VARCHAR(50),<br>reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP<br>)\";<br><br>if ($conn-&gt;query($sql) === TRUE) {<br>echo \"Table MyGuests created successfully\";<br>} else {<br>echo \"Error creating table: \" . $conn-&gt;error . \"&lt;br&gt;\";<br>}<br><br>$sql = \"INSERT INTO MyGuests (firstname, lastname, email)<br>VALUES ('John', 'Doe', 'john@example.com')\";<br><br>if ($conn-&gt;query($sql) === TRUE) {<br>echo \"New record created successfully\";<br>} else {<br>echo \"Error: \" . $sql . \"&lt;br&gt;\" . $conn-&gt;error . \"&lt;br&gt;\";<br>}<br>?&gt;",
+        "codeExpln":null
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "1":{
+        "title":"HTML Introduction",
+        "info":"HTML is the standard markup language for creating Web pages. HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content. HTML elements label pieces of content such as \"this is a heading\", \"this is a paragraph\", \"this is a link\", etc.<br>",
+        "example":null,
+        "codeExample":"&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;",
+        "codeExpln":"The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document.<br>The &lt;code&gt;&lt;html&gt;&lt;/code&gt; element is the root element of an HTML page.<br>The &lt;code&gt;&lt;head&gt;&lt;/code&gt; element contains meta information about the HTML page.<br>The &lt;code&gt;&lt;title&gt;&lt;/code&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab).<br>The &lt;code&gt;&lt;body&gt;&lt;/code&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.<br>The &lt;code&gt;&lt;h1&gt;&lt;/code&gt; element defines a large heading.<br>The &lt;code&gt;&lt;p&gt;&lt;/code&gt; element defines a paragraph."
+    },
+    "2":{
+        "title":"HTML Basic",
+        "info":"All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.<br>The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.<br>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.",
+        "example":null,
+        "codeExample":"&lt;!DOCTYPE html&gt;&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;",
+        "codeExpln":"The &lt;!DOCTYPE&gt; declaration represents the document type, and helps browsers to display web pages correctly. It must only appear once, at the top of the page (before any HTML tags). The &lt;!DOCTYPE&gt; declaration is not case sensitive."
+    },
+    "3":{
+        "title":"HTML Headings",
+        "info":"HTML headings are titles or subtitles that you want to display on a webpage.HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.",
+        "example":"<h1>Heading 1</h1><br><h2>Heading 2</h2><br><h3>Heading 3</h3><br><h4>Heading 4</h4><br><h5>Heading 5</h5><br><h6>Heading 6</h6>",
+        "codeExample":"&lt;h1&gt;Heading 1&lt;/h1&gt;<br>&lt;h2&gt;Heading 2&lt;/h2&gt;<br>&lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;",
+        "codeExpln":"&lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt; headings, then the less important &lt;h3&gt;, and so on."
+    },
+    "4":{
+        "title":"HTML Paragraphs",
+        "info":"The HTML &lt;p&gt; element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.",
+        "example":null,
+        "codeExample":"&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;p&gt;This is another paragraph.&lt;/p&gt;",
+        "codeExpln":null
+    },
+    "5":{
+        "title":"HTML Text Formatting",
+        "info":"HTML contains several elements for defining text with a special meaning.<br>&lt;b&gt; - Bold text<br>&lt;strong&gt; - Important text<br>&lt;i&gt; - Italic text<br>&lt;em&gt; - Emphasized text<br>&lt;mark&gt; - Marked text<br>&lt;small&gt; - Smaller text<br>&lt;del&gt; - Deleted text<br>&lt;ins&gt; - Inserted text<br>&lt;sub&gt; - Subscript text<br>&lt;sup&gt; - Superscript text",
+        "example":"<b>This text is bold</b><br><strong>This text is important!</strong><br><i>This text is italic</i><br><em>This text is emphasized</em><br><small>This is some smaller text.</small><br><p>Do not forget to buy <mark>milk</mark> today.</p><br><p>My favorite color is <del>blue</del> red.</p><br><p>My favorite color is <del>blue</del> <ins>red</ins>.</p><br><p>This is <sub>subscripted</sub> text.</p><br><p>This is <sup>superscripted</sup> text.</p>",
+        "codeExample":"&lt;b&gt;This text is bold&lt;/b&gt;<br>&lt;strong&gt;This text is important!&lt;/strong&gt;<br>&lt;i&gt;This text is italic&lt;/i&gt;<br>&lt;em&gt;This text is emphasized&lt;/em&gt;<br>&lt;small&gt;This is some smaller text.&lt;/small&gt;<br>&lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;<br>&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;<br>&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;<br>&lt;p&gt;This is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;<br>&lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;",
+        "codeExpln":null   
+    },
+    "6":{
+        "title":"HTML Quotations",
+        "info":"The HTML &lt;blockquote&gt; element defines a section that is quoted from another source.<br>The HTML &lt;q&gt; tag defines a short quotation.<br>The HTML &lt;abbr&gt; tag defines an abbreviation or an acronym, like \"HTML\", \"CSS\", \"Mr.\", \"Dr.\", \"ASAP\", \"ATM\".<br>The HTML &lt;address&gt; tag defines the contact information for the author/owner of a document or an article.<br>The HTML &lt;cite&gt; tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).The HTML &lt;bdo&gt; tag is used to override the current text direction",
+        "example":"<p>Here is a quote from WWF's website:</p><br><blockquote cite=\"http://www.worldwildlife.org/who/index.html\">For 50 years, WWF has been protecting the future of nature.The world's leading conservation organization,WWF works in 100 countries and is supported by1.2 million members in the United States andclose to 5 million globally.</blockquote><br><br><p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p><br><br><p>The <abbr title=\"World Health Organization\">WHO</abbr> was founded in 1948.</p><address>Written by John Doe.<br>Visit us at:<br>Example.com<br>Box 564, Disneyland<br>USA</address><br><br><p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p><br><br><bdo dir=\"rtl\">This text will be written from right to left</bdo>",
+        "codeExample":"&lt;p&gt;Here is a quote from WWF's website:&lt;/p&gt;<br>&lt;blockquote cite=\"http://www.worldwildlife.org/who/index.html\"&gt;For 50 years, WWF has been protecting the future of nature.The world's leading conservation organization,WWF works in 100 countries and is supported by1.2 million members in the United States andclose to 5 million globally.&lt;/blockquote&gt;<br><br>&lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;<br><br>&lt;p&gt;The &lt;abbr title=\"World Health Organization\"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;&lt;address&gt;Written by John Doe.<br>Visit us at:<br>Example.com<br>Box 564, Disneyland<br>USA&lt;/address&gt;<br><br>&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;<br><br>&lt;bdo dir=\"rtl\"&gt;This text will be written from right to left&lt;/bdo&gt;",
+        "codeExpln":null
+    },
+    "7":{
+        "title":"HTML Comments",
+        "info":"HTML comments are not displayed in the browser, but they can help document your HTML source code.",
+        "example":"<!-- This is a comment --><br><br><p>This is a paragraph.</p><br><br><!-- Remember to add more information here -->",
+        "codeExample":"&lt;!-- This is a comment --&gt;<br><br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;!-- Remember to add more information here --&gt;",
+        "codeExpln":null
+    },
+    "8":{
+        "title":"HTML Links",
+        "info":"HTML links are hyperlinks.<br>You can click on a link and jump to another document.<br>When you move the mouse over a link, the mouse arrow will turn into a little hand.<br>The HTML &lt;a&gt; tag defines a hyperlink.<br>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.",
+        "example":"<a href=\"https://www.agnium.com/\">Visit Agnium!</a>",
+        "codeExample":"&lt;a href=\"https://www.agnium.com/\"&gt;Visit Agnium!&lt;/a&gt;",
+        "codeExpln":"By default, links will appear as follows in all browsers:<br>An unvisited link is underlined and blue.<br>A visited link is underlined and purple.<br>An active link is underlined and red"
+    },
+    "9":{
+        "title":"HTML Images",
+        "info":"Images can improve the design and the appearance of a web page. The HTML &lt;img&gt; tag is used to embed an image in a web page.<br>Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image.<br>The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.<br>The &lt;img&gt; tag has two required attributes:<br>src - Specifies the path to the image<br>alt - Specifies an alternate text for the image",
+        "example":"<img src=\"https://photographycourse.net/wp-content/uploads/2014/11/Landscape-Photography-steps.jpg\" alt=\"Landscape Image\">",
+        "codeExample":"&lt;img src=\"https://photographycourse.net/wp-content/uploads/2014/11/Landscape-Photography-steps.jpg\" alt=\"Landscape Image\"&gt;",
+        "codeExpln":null
+    },
+    "10":{
+        "title":"HTML Tables",
+        "info":"HTML tables allow web developers to arrange data into rows and columns.<br>The &lt;table&gt; tag defines an HTML table.<br><br>Each table row is defined with a &lt;tr&gt; tag. Each table header is defined with a &lt;th&gt; tag. Each table data/cell is defined with a &lt;td&gt; tag.<br><br>By default, the text in &lt;th&gt; elements are bold and centered.<br><br>By default, the text in &lt;td&gt; elements are regular and left-aligned.",
+        "example":"<table border=1px style=\"width:50%;\"><tr><th>Firstname</th><th>Lastname</th><th>Age</th></tr><tr><td>Ganesh</td><td>Dhavan</td><td>21</td></tr><tr><td>Umair</td><td>Sayyed</td><td>20</td></tr></table>",
+        "codeExample":"&lt;table style=\"width:80%\"&gt;<br>&lt;tr&gt;<br>&lt;th&gt;Firstname&lt;/th&gt;<br>&lt;th&gt;Lastname&lt;/th&gt;<br>&lt;th&gt;Age&lt;/th&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;<br>&lt;td&gt;Ganesh&lt;/td&gt;<br>&lt;td&gt;Dhavan&lt;/td&gt;<br>&lt;td&gt;21&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;<br>&lt;td&gt;Umair&lt;/td&gt;<br>&lt;td&gt;Sayyed&lt;/td&gt;<br>&lt;td&gt;20&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;",
+        "codeExpln":null
+    },
+    "11":{
+        "title":"HTML Forms",
+        "info":"An HTML form is used to collect user input. The user input is most often sent to a server for processing.<br>The HTML &lt;form&gt; element is used to create an HTML form for user input. The &lt;form&gt; element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. <br><br>The HTML &lt;input&gt; element is the most used form element.<br>An &lt;input&gt; element can be displayed in many ways, depending on the type attribute.<br><br>The &lt;label&gt; tag defines a label for many form elements.<br><br>The &lt;input type=\"submit\"&gt; defines a button for submitting the form data to a form-handler. ",
+        "example":"<form action=\"\"><br><label for=\"fname\">First name:</label><br><br><input type=\"text\" id=\"fname\" name=\"fname\" value=\"John\"><br><br><label for=\"lname\">Last name:</label><br><br><input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br><br><input type=\"submit\" value=\"Submit\"><br></form> ",
+        "codeExample":"&lt;form action=\"/action_page.php\"&gt;<br>&lt;label for=\"fname\"&gt;First name:&lt;/label&gt;<br><br>&lt;input type=\"text\" id=\"fname\" name=\"fname\" value=\"John\"&gt;<br><br>&lt;label for=\"lname\"&gt;Last name:&lt;/label&gt;<br><br>&lt;input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"&gt;<br><br><br>&lt;input type=\"submit\" value=\"Submit\"&gt;<br>&lt;/form&gt;",
+        "codeExpln":null
+    },
+    "12":{
+        "title":"HTML Input Types",
+        "info":"Here are the different input types you can use in HTML:<br><br>&lt;input type=\"button\"&gt;<br>&lt;input type=\"checkbox\"&gt;<br>&lt;input type=\"color\"&gt;<br>&lt;input type=\"date\"&gt;<br>&lt;input type=\"datetime-local\"&gt;<br>&lt;input type=\"email\"&gt;<br>&lt;input type=\"file\"&gt;<br>&lt;input type=\"hidden\"&gt;<br>&lt;input type=\"image\"&gt;<br>&lt;input type=\"month\"&gt;<br>&lt;input type=\"number\"&gt;<br>&lt;input type=\"password\"&gt;<br>&lt;input type=\"radio\"&gt;<br>&lt;input type=\"range\"&gt;<br>&lt;input type=\"reset\"&gt;<br>&lt;input type=\"search\"&gt;<br>&lt;input type=\"submit\"&gt;<br>&lt;input type=\"tel\"&gt;<br>&lt;input type=\"text\"&gt;<br>&lt;input type=\"time\"&gt;<br>&lt;input type=\"url\"&gt;<br>&lt;input type=\"week\"&gt;",
+        "example":"<form><br><label for=\"username\">Username:</label><br><input type=\"text\" id=\"username\" name=\"username\"><br><label for=\"pwd\">Password:</label><br><input type=\"password\" id=\"pwd\" name=\"pwd\"><br><input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\"><label for=\"male\">Male</label><br><input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\"><label for=\"female\">Female</label><br><input type=\"radio\" id=\"other\" name=\"gender\" value=\"other\"><label for=\"other\">Other</label><br><input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\"><label for=\"vehicle1\"> I have a bike</label><br><input type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\"><label for=\"vehicle2\"> I have a car</label><br><input type=\"checkbox\" id=\"vehicle3\" name=\"vehicle3\" value=\"Boat\"><label for=\"vehicle3\"> I have a boat</label><br><label for=\"favcolor\">Select your favorite color:</label><input type=\"color\" id=\"favcolor\" name=\"favcolor\"><br><label for=\"birthday\">Birthday:</label><input type=\"date\" id=\"birthday\" name=\"birthday\"><br><label for=\"quantity\">Quantity (between 1 and 5):</label><br><input type=\"number\" id=\"quantity\" name=\"quantity\" min=\"1\" max=\"5\"><br><input type=\"button\" onclick=\"alert('Hello Learner. Welcome!')\" value=\"Click Me!\">&nbsp;<input type=\"submit\" value=\"Submit\">&nbsp;<input type=\"reset\"></form>",
+        "codeExample":"&lt;form&gt;<br>&lt;label for=\"username\"&gt;Username:&lt;/label&gt;<br>&lt;input type=\"text\" id=\"username\" name=\"username\"&gt;<br>&lt;label for=\"pwd\"&gt;Password:&lt;/label&gt;<br>&lt;input type=\"password\" id=\"pwd\" name=\"pwd\"&gt;<br>&lt;input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\"&gt;&lt;label for=\"male\"&gt;Male&lt;/label&gt;<br>&lt;input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\"&gt;&lt;label for=\"female\"&gt;Female&lt;/label&gt;<br>&lt;input type=\"radio\" id=\"other\" name=\"gender\" value=\"other\"&gt;&lt;label for=\"other\"&gt;Other&lt;/label&gt;<br>&lt;input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\"&gt;&lt;label for=\"vehicle1\"&gt; I have a bike&lt;/label&gt;<br>&lt;input type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\"&gt;&lt;label for=\"vehicle2\"&gt; I have a car&lt;/label&gt;<br>&lt;input type=\"checkbox\" id=\"vehicle3\" name=\"vehicle3\" value=\"Boat\"&gt;&lt;label for=\"vehicle3\"&gt; I have a boat&lt;/label&gt;<br>&lt;label for=\"favcolor\"&gt;Select your favorite color:&lt;/label&gt;&lt;input type=\"color\" id=\"favcolor\" name=\"favcolor\"&gt;<br>&lt;label for=\"birthday\"&gt;Birthday:&lt;/label&gt;&lt;input type=\"date\" id=\"birthday\" name=\"birthday\"&gt;<br>&lt;label for=\"quantity\"&gt;Quantity (between 1 and 5):&lt;/label&gt;<br>&lt;input type=\"number\" id=\"quantity\" name=\"quantity\" min=\"1\" max=\"5\"&gt;<br>&lt;input type=\"button\" onclick=\"alert('Hello Person. Welcome!')\" value=\"Click Me!\"&gt;&lt;input type=\"submit\" value=\"Submit\"&gt;&lt;input type=\"reset\"&gt;&lt;/form&gt;",
+        "codeExpln":null
+    }
+}
